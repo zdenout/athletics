@@ -1,0 +1,87 @@
+[Config]
+Compilator.SaveAll=0
+Compilator.Capture=0
+Compilator.CompileOnBackground=0
+Compilator.ProgSaveAll=0
+Compilator.ProgRunSelection=0
+Compilator.LogType=0
+Compilator.LogEncoding=0
+DefaultCP=1250
+LogtoEnd=1
+DontOpen=0
+AbsolutePath=0
+FileFormat=0
+ProjectFilesOnly=0
+HTServer=localhost
+[Project tree]
+WEB
+	+CZ
+		index.html
+		novinky.html
+		stazeni.html
+		napoveda.html
+		kontakt.html
+	+EN
+		index-en.html
+		news.html
+		download.html
+		help.html
+		contact.html
+	+STYLES
+		style.css
+[Open project files]
+0=index.html
+1=novinky.html
+2=stazeni.html
+3=napoveda.html
+4=kontakt.html
+5=index-en.html
+6=news.html
+7=download.html
+8=help.html
+9=contact.html
+10=style.css
+11=menu.html
+12=script.js
+[Selected Project Files]
+Main=
+Selected=index.html
+[index.html]
+TopLine=22
+Caret=1,46
+[novinky.html]
+TopLine=1
+Caret=1,32
+[stazeni.html]
+TopLine=1
+Caret=1,34
+[napoveda.html]
+TopLine=1
+Caret=1,35
+[kontakt.html]
+TopLine=1
+Caret=1,30
+[index-en.html]
+TopLine=22
+Caret=1,46
+[news.html]
+TopLine=1
+Caret=16,1
+[download.html]
+TopLine=1
+Caret=1,33
+[help.html]
+TopLine=1
+Caret=1,34
+[contact.html]
+TopLine=1
+Caret=1,29
+[style.css]
+TopLine=48
+Caret=1,99
+[menu.html]
+TopLine=1
+Caret=1,13
+[script.js]
+TopLine=1
+Caret=1,40

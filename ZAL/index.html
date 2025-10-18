@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Měření atletických disciplín – Software</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      background: #f4f4f9;
+      color: #333;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      position: relative;
+    }
+    header h1 { margin: 0; font-size: 28px; }
+    main { max-width: 800px; margin: 20px auto; padding: 0 20px; }
+    .download, .pdf {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 200px;
+      margin: 5px;
+      padding: 12px;
+      text-align: center;
+      background: #28a745;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 16px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    .download:hover, .pdf:hover { background: #218838; }
+    .download-row, .pdf-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px;
+      margin: 20px 0;
+    }
+    .pdf svg.icon, .download svg.icon { margin-right: 5px; }
+    footer { text-align: center; margin-top: 40px; padding: 15px; background: #eee; font-size: 14px; }
+    .lang-switch { position: absolute; top: 15px; right: 15px; }
+    .lang-switch button {
+      margin-left: 5px; padding: 5px 10px; border: none; border-radius: 5px; cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="lang-switch">
+      <button onclick="setLang('cs')">🇨🇿 Čeština</button>
+      <button onclick="setLang('en')">🇬🇧 English</button>
+    </div>
+    <h1 data-cs="Měření atletických disciplín" data-en="Athletics Measurement Software"></h1>
+    <p data-cs="Software pro totální stanice Topcon a Sokkia" data-en="Software for Topcon and Sokkia total stations"></p>
+  </header>
+
+  <main>
+    <!-- O programu -->
+    <h2 data-cs="O programu" data-en="About the program"></h2>
+    <p data-cs="Tento program umožňuje rychlé a přesné měření atletických disciplín pomocí totálních stanic Topcon a Sokkia. Je vhodný pro rozhodčí, organizátory a technické delegáty na atletických soutěžích. <a href='#novinky' data-cs='Sledujte sekci Novinky' data-en='Check the Updates section'>Sledujte sekci Novinky</a>."
+       data-en="This program enables fast and accurate measurement of athletics disciplines using Topcon and Sokkia total stations. It is suitable for referees, organizers, and technical delegates at athletics competitions. <a href='#novinky' data-cs='Sledujte sekci Novinky' data-en='Check the Updates section'>Check the Updates section</a>."></p>
+
+    <!-- Stažení -->
+    <h2 data-cs="Stažení" data-en="Download"></h2>
+    <div class="download-row">
+      <a class="download" href="SOUBOR_verze1.zip">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFA500" viewBox="0 0 16 16">
+          <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6l-4-4H4z"/>
+        </svg>
+        <span data-cs="Verze 1" data-en="Version 1"></span>
+      </a>
+      <a class="download" href="SOUBOR_verze2.zip">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFA500" viewBox="0 0 16 16">
+          <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6l-4-4H4z"/>
+        </svg>
+        <span data-cs="Verze 2" data-en="Version 2"></span>
+      </a>
+      <a class="download" href="material.zip">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#FFA500" viewBox="0 0 16 16">
+          <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V6l-4-4H4z"/>
+        </svg>
+        <span data-cs="Materiál" data-en="Material"></span>
+      </a>
+    </div>
+
+    <!-- Novinky -->
+    <h2 data-cs="Aktualizace" data-en="Updates" id="novinky"></h2>
+    <ul>
+      <li data-cs="Verze 2.0 – Přidána podpora Sokkia total stations" data-en="Version 2.0 – Added support for Sokkia total stations"></li>
+      <li data-cs="Verze 1.1 – Opraveny drobné chyby při exportu dat" data-en="Version 1.1 – Fixed minor data export bugs"></li>
+      <li data-cs="Verze 1.0 – První stabilní verze programu" data-en="Version 1.0 – First stable release"></li>
+    </ul>
+
+    <!-- Kontakt -->
+    <h2 data-cs="Kontakt" data-en="Contact"></h2>
+    <p>
+      <span data-cs="Máte dotazy nebo potřebujete pomoc?" data-en="Do you have questions or need help?"></span><br>
+      <span data-cs="Napište mi na :" data-en="Write to me at:"></span>
+      <a href="mailto:vase@email.cz">vase@email.cz</a>
+    </p>
+
+    <!-- Nápověda a materiály -->
+    <h2 data-cs="Nápověda a materiály" data-en="Help & Materials"></h2>
+    <div class="pdf-row">
+      <a id="help-pdf" href="napoveda-cs.pdf" target="_blank" class="pdf">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#d9534f" viewBox="0 0 16 16">
+          <path d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+        </svg>
+        <span data-cs="Nápověda" data-en="Help"></span>
+      </a>
+      <a id="flyer-pdf" href="letak-cs.pdf" target="_blank" class="pdf">
+        <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#d9534f" viewBox="0 0 16 16">
+          <path d="M4 0h8a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2z"/>
+        </svg>
+        <span data-cs="Leták" data-en="Flyer"></span>
+      </a>
+    </div>
+  </main>
+
+  <footer data-cs="&copy; 2025 – Váš program pro měření atletických disciplín"
+          data-en="&copy; 2025 – Your athletics measurement software">
+  </footer>
+
+  <script>
+    function setLang(lang) {
+      document.querySelectorAll("[data-cs]").forEach(el => {
+        el.innerHTML = el.getAttribute("data-" + lang);
+      });
+      if(lang === 'cs') {
+        document.getElementById("help-pdf").href = "napoveda-cs.pdf";
+        document.getElementById("flyer-pdf").href = "letak-cs.pdf";
+      } else {
+        document.getElementById("help-pdf").href = "napoveda-en.pdf";
+        document.getElementById("flyer-pdf").href = "letak-en.pdf";
+      }
+    }
+    setLang("cs");
+  </script>
+</body>
+</html>
