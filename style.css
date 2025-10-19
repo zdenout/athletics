@@ -59,7 +59,7 @@ h1, h2 {
 }
 
 /* Tlačítka */
-.download-row, .pdf-row {
+.download-row, .pdf-row , .show-row{
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
