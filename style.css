@@ -54,7 +54,7 @@ section {
 section:nth-child(even) {
   background: #f0f4f8;
 }
-h1, h2 {
+h1, h2, h3 {
   color: #004080;
 }
 
