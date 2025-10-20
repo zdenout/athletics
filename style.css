@@ -54,7 +54,7 @@ section {
 section:nth-child(even) {
   background: #f0f4f8;
 }
-h1, h2, h3 {
+h1, h2, h3, p {
   color: #004080;
 }
 
@@ -89,7 +89,9 @@ h1, h2, h3 {
   padding: 15px;
   margin-bottom: 10px;
   border-left: 5px solid #004080;
+  /* border-bottom: 5px solid #004080; */
   box-shadow: 1px 1px 5px rgba(0,0,0,0.1);
+  color: #004080;
 }
 
 /* Footer */
@@ -100,4 +102,14 @@ footer {
   padding: 10px;
   font-size: 14px;
   margin-top: 40px;
+}
+
+/* místo teček čtverečky a modrá barva textu pro seznam v sekci "about" */
+#about ul, #download ul {
+  list-style-type: square;
+  color: #004080;     /* modrá barva textu */
+  padding-left: 2em;/* odsazení pro čtverečky */
+}
+#about ul li, #download ul li {
+  color: inherit;
 }
