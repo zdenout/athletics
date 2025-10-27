@@ -62,3 +62,19 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+// === HAMBURGER MENU ===
+document.addEventListener('click', function (e) {
+  const toggle = document.getElementById('menu-toggle');
+  const navList = document.getElementById('nav-list');
+  if (!toggle || !navList) return;
+
+  // Kliknutí na tlačítko ☰
+  if (e.target === toggle) {
+    navList.classList.toggle('active');
+  }
+
+  // Kliknutí mimo menu – zavře ho
+  if (!e.target.closest('nav')) {
+    navList.classList.remove('active');
+  }
+});
