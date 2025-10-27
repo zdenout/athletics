@@ -6,6 +6,7 @@ fetch('menu.html')
     const currentLangSpan = document.getElementById('current-lang');
     const switchLink = document.getElementById('switch-lang');
 
+    // treat root (empty) as index.html
     const path = location.pathname.split('/').pop();
     const isCZ = !['index-en.html','news.html','download.html','help.html','contact.html'].includes(path);
     let lang = isCZ ? 'cz' : 'en';
